@@ -1,7 +1,10 @@
-var gulp       = require('gulp');
-var del        = require('del');
-var postcss    = require('gulp-postcss');
-var simpleGrid = require('postcss-simple-grid');
+var gulp         = require('gulp');
+var del          = require('del');
+var gulpSequence = require('gulp-sequence');
+var postcss      = require('gulp-postcss');
+var simpleGrid   = require('postcss-simple-grid');
+
+// gulp tasks
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
@@ -14,3 +17,6 @@ gulp.task('css', function () {
         .pipe(gulp.dest('dist/styles/'));
 });
 
+// gulp build task
+
+gulp.task('default', gulpSequence(['clean'], 'css'));
