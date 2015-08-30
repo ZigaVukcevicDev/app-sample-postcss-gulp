@@ -1,6 +1,9 @@
-var gulp = require('gulp');
-var postcss = require('gulp-postcss');
+var gulp       = require('gulp');
+var del        = require('del');
+var postcss    = require('gulp-postcss');
 var simpleGrid = require('postcss-simple-grid');
+
+gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('css', function () {
     var processors = [
@@ -10,3 +13,4 @@ gulp.task('css', function () {
         .pipe(postcss(processors))
         .pipe(gulp.dest('dist/styles/'));
 });
+
