@@ -1,0 +1,20 @@
+body {
+    background: red;
+}
+
+.row{
+    display: block;
+    margin: 0 auto;
+    max-width: 1320px;
+    position: relative;
+    width: 100%;
+}
+
+.row:before,.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
