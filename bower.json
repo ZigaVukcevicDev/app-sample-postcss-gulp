@@ -1,0 +1,19 @@
+{
+  "name": "some-name",
+  "version": "0.0.0",
+  "authors": [
+    "Ziga Vukcevic <ziga@be-codified.com>"
+  ],
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

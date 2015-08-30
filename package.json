@@ -1,0 +1,17 @@
+{
+  "name": "some-test-site.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Žiga Vukčevič",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.0",
+    "postcss-simple-grid": "^0.5.1"
+  }
+}
